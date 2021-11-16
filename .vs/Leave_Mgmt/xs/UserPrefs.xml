@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{4372ACCA-CEA2-46EB-B736-55C8F686263A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Leave_Mgmt/Controllers/LeaveTypesController.cs">
+    <Files>
+      <File FileName="Leave_Mgmt/ViewModels/LeaveTypeVM.cs" Line="12" Column="35" />
+      <File FileName="Leave_Mgmt/ViewModels/LeaveHistoryVM.cs" />
+      <File FileName="Leave_Mgmt/ViewModels/LeaveAllocationVM.cs" />
+      <File FileName="Leave_Mgmt/ViewModels/EmployeeVM.cs" />
+      <File FileName="Leave_Mgmt/Startup.cs" Line="79" Column="43" />
+      <File FileName="Leave_Mgmt/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Leave_Mgmt/Controllers/LeaveTypesController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Leave_Mgmt" expanded="True">
+            <Node name="Leave_Mgmt" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="LeaveTypesController.cs" selected="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Leave__Mgmt PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
