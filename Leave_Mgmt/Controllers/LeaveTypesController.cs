@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Leave_Mgmt.Contracts;
+using Leave_Mgmt.ViewModels;
+using leaveMangement.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,7 +26,9 @@ namespace Leave_Mgmt.Controllers
         // GET: LeaveTypes
         public ActionResult Index()
         {
-            return View();
+            var leaveTypes = _repo.FindAll().ToList();
+            var model = _mapper.Map<List<LeaveType>, List<LeaveTypeVM>>(leaveTypes);
+            return View(model);
         }
 
         // GET: LeaveTypes/Details/5
@@ -40,12 +46,24 @@ namespace Leave_Mgmt.Controllers
         // POST: LeaveTypes/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        //public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(LeaveTypeVM model)
         {
             try
             {
-                // TODO: Add insert logic here
+                if(!ModelState.IsValid)
+                {
+                    return View(model);
+                }
+                var leaveType = _mapper.Map<LeaveType>(model);
+                leaveType.DateCreated = DateTime.Now;
 
+                var isSuccess = _repo.Create(leaveType);
+                if(!isSuccess)
+                {
+                    ModelState.AddModelError("","Something went Wrong..");
+                    return View(model);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch

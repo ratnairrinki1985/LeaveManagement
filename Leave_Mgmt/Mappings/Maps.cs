@@ -9,8 +9,7 @@ namespace Leave_Mgmt.Mappings
         public Maps()
         {
             //<DataClass,View Model Class>
-            CreateMap<LeaveType, DetailsLeaveTypeVM>().ReverseMap();
-            CreateMap<LeaveType, CreateLeaveTypeVM>().ReverseMap();
+            CreateMap<LeaveType, LeaveTypeVM>().ReverseMap();
 
             CreateMap<LeaveHistory, LeaveHistoryVM>().ReverseMap();
 

@@ -1,23 +1,37 @@
 ﻿<Properties StartupConfiguration="{4372ACCA-CEA2-46EB-B736-55C8F686263A}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Leave_Mgmt/Controllers/LeaveTypesController.cs">
     <Files>
-      <File FileName="Leave_Mgmt/ViewModels/LeaveTypeVM.cs" Line="12" Column="35" />
-      <File FileName="Leave_Mgmt/ViewModels/LeaveHistoryVM.cs" />
-      <File FileName="Leave_Mgmt/ViewModels/LeaveAllocationVM.cs" />
-      <File FileName="Leave_Mgmt/ViewModels/EmployeeVM.cs" />
-      <File FileName="Leave_Mgmt/Startup.cs" Line="79" Column="43" />
-      <File FileName="Leave_Mgmt/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Leave_Mgmt/Controllers/LeaveTypesController.cs" Line="1" Column="1" />
+      <File FileName="Leave_Mgmt/ViewModels/LeaveHistoryVM.cs" Line="26" Column="9" />
+      <File FileName="Leave_Mgmt/Repository/LeaveTypeRepository.cs" Line="1" Column="1" />
+      <File FileName="Leave_Mgmt/Repository/LeaveHistoryRepository.cs" />
+      <File FileName="Leave_Mgmt/ViewModels/LeaveTypeVM.cs" Line="6" Column="18" />
+      <File FileName="Leave_Mgmt/Controllers/LeaveTypesController.cs" Line="59" Column="54" />
+      <File FileName="Leave_Mgmt/Views/LeaveTypes/Create.cshtml" Line="27" Column="85" />
+      <File FileName="Leave_Mgmt/Views/LeaveTypes/Index.cshtml" Line="1" Column="53" />
+      <File FileName="Leave_Mgmt/ViewModels/LeaveAllocationVM.cs" Line="22" Column="27" />
+      <File FileName="Leave_Mgmt/Mappings/Maps.cs" Line="12" Column="62" />
+      <File FileName="Leave_Mgmt/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Leave_Mgmt/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Leave_Mgmt" expanded="True">
             <Node name="Leave_Mgmt" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Controllers" expanded="True">
                 <Node name="LeaveTypesController.cs" selected="True" />
               </Node>
+              <Node name="Mappings" expanded="True" />
+              <Node name="Repository" expanded="True" />
               <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="LeaveTypes" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -28,7 +42,9 @@
   <MonoDevelop.Ide.ItemProperties.Leave__Mgmt PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ratnairrinki/Documents/ASP.netCore/EFCore/Leave_Mgmt/Leave_Mgmt/Controllers/LeaveTypesController.cs" relfile="Leave_Mgmt/Controllers/LeaveTypesController.cs" line="54" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
