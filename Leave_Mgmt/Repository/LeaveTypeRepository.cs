@@ -62,6 +62,12 @@ namespace Leave_Mgmt.Repository
             return Save();
             //SAVE
         }
+
+        public bool isExists(int id)
+        {
+            var exists = _db.LeaveTypes.Any(q=>q.Id == id);
+            return exists;
+        }
         #endregion
     }
 }

@@ -7,6 +7,8 @@ namespace Leave_Mgmt.Contracts
     {
         ICollection<T> FindAll();
 
+        bool isExists(int id);
+
         T FindById(int id);
 
         bool Create(T entity);
